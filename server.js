@@ -25,8 +25,11 @@ const corsOptions = {
 //     "preflightContinue": false,
 //     "optionsSuccessStatus": 204
 //   }
-
-app.use(cors())
+app.use(
+    cors({
+        origin: "*",
+    })
+)
 app.use(express.static(__dirname + '/public'));
 
 // Express Session
