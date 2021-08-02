@@ -12,11 +12,11 @@ const passport = require('passport');
 require('./config/passort')(passport);
 require('./config/passport-google')(passport);
 
-// Cors 
-// const corsOptions = {
-//   // origin: process.env.ALLOWED_CLIENTS.split(',')
-//   // ['http://localhost:3000', 'http://localhost:5000', 'http://localhost:3300']
-// }
+Cors 
+const corsOptions = {
+  // origin: process.env.ALLOWED_CLIENTS.split(',')
+  // ['http://localhost:3000', 'http://localhost:5000', 'http://localhost:3300']
+}
 
 // Default configuration looks like
 // {
@@ -26,9 +26,7 @@ require('./config/passport-google')(passport);
 //     "optionsSuccessStatus": 204
 //   }
 app.use(
-    cors({
-        origin: "*",
-    })
+    cors()
 )
 app.use(express.static(__dirname + '/public'));
 
