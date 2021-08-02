@@ -26,7 +26,9 @@ const corsOptions = {
 //     "optionsSuccessStatus": 204
 //   }
 app.use(
-    cors()
+    cors({
+        origin: "*",
+    })
 )
 app.use(express.static(__dirname + '/public'));
 
