@@ -13,10 +13,10 @@ require('./config/passort')(passport);
 require('./config/passport-google')(passport);
 
 // Cors 
-const corsOptions = {
-  // origin: process.env.ALLOWED_CLIENTS.split(',')
-  // ['http://localhost:3000', 'http://localhost:5000', 'http://localhost:3300']
-}
+// const corsOptions = {
+//   // origin: process.env.ALLOWED_CLIENTS.split(',')
+//   // ['http://localhost:3000', 'http://localhost:5000', 'http://localhost:3300']
+// }
 
 // Default configuration looks like
 // {
